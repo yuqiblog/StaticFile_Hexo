@@ -5,7 +5,7 @@ body {
   cursor: url(https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur),
     default;
 }
-/* 阅读模式 */
+/* TAG 阅读模式 */
 .read-mode {
   font-size: 17px;
 }
@@ -23,15 +23,10 @@ img {
 }
 
 #vcomment textarea {
-  background: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png)
+  background: url(https://ae01.alicdn.com/kf/H86540ab9ffc14cabab00bdfbaa43cbdfP.png)
     100% 100% no-repeat;
 }
-/* 头部Banner图 */
-#nav {
-  background-image: url("https://ae01.alicdn.com/kf/H18a4b998752a4ae68b8e85d432a5aef0l.png"),
-    linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)),
-    url("https://ae01.alicdn.com/kf/H21b5f6b8496141a1979a33666e1074d9x.jpg") !important;
-}
+/* TAG 全局背景 */
 #web_bg {
   background: -webkit-linear-gradient(
     0deg,
@@ -89,7 +84,7 @@ img {
     rgba(109, 186, 130, 0.1) 100%
   );
 }
-/* 文章卡片，文章列表卡片，右侧info卡片 */
+/* TAG 文章卡片，文章列表卡片，右侧info卡片 */
 #aside_content .card-widget,
 #recent-posts > .recent-post-item,
 .layout_post > #page,
@@ -103,7 +98,7 @@ img {
 [data-theme="dark"] .layout_post > #post {
   background-color: var(--dark_bg_color);
 }
-
+/* TAG 自定义元素 */
 span.inline-tag {
   display: inline;
   padding: 0.2em 0.6em 0.3em;
@@ -188,7 +183,7 @@ p.top {
 .imgList li::before {
   content: none !important;
 }
-/* 滚动条 */
+/* TAG 滚动条 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -222,7 +217,7 @@ p.top {
   color: #fff;
   background-color: #49b1f5;
 }
-/* 页脚 */
+/* TAG 页脚 */
 #footer {
   background: rgba(255, 255, 255, 0.15);
   color: #000;
@@ -235,7 +230,7 @@ p.top {
 #footer #footer-wrap a {
   color: #333;
 }
-/* 隐藏分类 */
+/* TAG 隐藏分类 */
 #aside_content
   .card-archives
   ul.card-archive-list
@@ -252,7 +247,7 @@ p.top {
   min-width: 50%;
 }
 /* 
-    友链页CSS
+    TAG 友链页CSS
 */
 /* 边框呼吸灯效果 */
 @keyframes link_custom {
@@ -369,7 +364,7 @@ p.top {
 
 /* ********* */
 /* 
-    扩展CSS
+    TAG 扩展CSS
 */
 div.tabs {
   display: block;
