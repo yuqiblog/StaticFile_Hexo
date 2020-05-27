@@ -113,6 +113,7 @@ span.inline-tag {
   border-radius: 6px;
   background-color: var(--Color);
 }
+
 /* TAG 标签fontawsome5图标 */
 .font5 {
   display: block;
@@ -375,6 +376,42 @@ p.top {
 /* 
     TAG 扩展CSS
 */
+/* 夜间适配 */
+[data-theme="dark"] div.tabs {
+  border-radius: 5px;
+  border-color: rgba(0, 0, 0, 0.8);
+}
+
+[data-theme="dark"] div.tabs ul.nav-tabs {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+[data-theme="dark"] div.tabs .tab-content .tab-pane {
+  background: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.7);
+}
+/* checkbox  details 按钮的夜间适配*/
+[data-theme="dark"] .checkbox,
+[data-theme="dark"] details,
+[data-theme="dark"] div.btns,
+[data-theme="dark"] span.inline-tag,
+[data-theme="dark"] .snote,
+[data-theme="dark"] div.tabs ul.nav-tabs,
+[data-theme="dark"] audio {
+  filter: brightness(0.7);
+}
+/* snote夜间模式 */
+[data-theme="dark"] .snote {
+  color: #4c4948;
+}
+/* 小tag 夜间模式 */
+[data-theme="dark"] span.inline-tag {
+  color: rgba(255, 255, 255, 0.8);
+}
+/* 主题自带hideToggle */
+[data-theme="dark"] .hide-toggle {
+  border: 1px solid rgba(85, 85, 85, 0.2);
+}
 div.tabs {
   display: block;
   position: relative;
@@ -399,20 +436,6 @@ div.tabs ul li a {
   border-radius: 0;
 }
 
-[data-theme="dark"] div.tabs {
-  border-radius: 2px;
-  border-color: rgba(0, 0, 0, 0.8);
-}
-
-[data-theme="dark"] div.tabs ul.nav-tabs {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  filter: brightness(0.7);
-}
-[data-theme="dark"] div.tabs .tab-content .tab-pane {
-  background: rgba(0, 0, 0, 0.8);
-  color: rgba(255, 255, 255, 0.7);
-}
 div.tabs .highlight,
 div.tabs details,
 div.tabs div.snote,
@@ -519,10 +542,6 @@ div.btns {
   -ms-flex-align: start;
   align-items: flex-start;
   overflow: visible;
-}
-
-[data-theme="dark"] div.btns {
-  filter: brightness(0.7);
 }
 
 [data-theme="dark"] div.btns a {
@@ -782,10 +801,6 @@ div.btns.rounded a > img:first-child {
   margin-right: 8px;
 }
 
-[data-theme="dark"] .checkbox {
-  filter: brightness(0.7);
-}
-
 .checkbox input[type="checkbox"]:after,
 .checkbox input[type="checkbox"]:before {
   position: absolute;
@@ -1038,10 +1053,6 @@ details {
   -o-transition: all 0.28s ease;
   border: 1px solid #f6f6f6;
   line-height: 1.3;
-}
-
-[data-theme="dark"] details {
-  filter: brightness(0.7);
 }
 
 details summary {
@@ -1353,7 +1364,7 @@ div.gallery.stretch > p img {
 #article-container .fancybox img {
   margin: 0;
 }
-/* 小标签 */
+/* TAG 小标签 */
 .snote {
   position: relative;
   margin: 0 0 1rem;
@@ -1363,6 +1374,7 @@ div.gallery.stretch > p img {
   background-color: #f9f9f9;
   border-radius: 3px;
 }
+
 .snote h2,
 .snote h3,
 .snote h4,
