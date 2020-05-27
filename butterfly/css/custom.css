@@ -17,7 +17,10 @@ img {
   background: url(https://cdn.jsdelivr.net/gh/blogimg/HexoStaticFile1/imgbed/2020/02/13/20200213164243.png)
     100% 100% no-repeat;
 }
-
+/* 手机侧边栏展开关闭图标对齐 */
+#mobile-sidebar #mobile-sidebar-menus .menus_items .menus-expand {
+  text-align: center;
+}
 #web_bg {
   background: -webkit-linear-gradient(
     0deg,
@@ -89,7 +92,16 @@ img {
 [data-theme="dark"] .layout_post > #post {
   background-color: var(--dark_bg_color);
 }
-
+/* 标签fontawsome5图标 */
+.font5 {
+  display: block;
+  width: 100%;
+  text-align: left;
+  font-weight: 500;
+  line-height: 32px;
+  border-left-color: #767676;
+  background: #f6f6f6;
+}
 span.inline-tag {
   display: inline;
   padding: 0.2em 0.6em 0.3em;
@@ -137,7 +149,7 @@ span.grey {
 
 p.div-border {
   padding: 10px;
-  border: 1px solid var(--Color,#333);
+  border: 1px solid var(--Color, #333);
   border-radius: 0.4rem;
   background-color: var(--ColorA, transparent);
 }
