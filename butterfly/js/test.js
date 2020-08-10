@@ -1,0 +1,1 @@
+"use strict";new Speak({per_page:3,owner:"antmoe",reop:"speak",defaultLabelName:"Default",defaultLabelColor:"#ffc107"});
